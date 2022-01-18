@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+}
+
+body{
+    background-image: url("../Slike/b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.filter{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    flex : 3;
+    margin-bottom: 1rem;
+    min-width: 360px;
+    background-color: white;
+}
+
+.box{
+    margin:0rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
+    width: 360px;
+    height: 460px;
+    background-color: #FFFFFF;
+}
+
+.pregled{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    align-items:center;
+    margin: 0.5rem;
+}
+
+.pregled *{
+    margin : 0.5rem;
+}
+
+.gradIzbor{
+    border-radius: 5px;
+    background-color: #3b252c;
+    color: whitesmoke;
+    border : 2px ridge #3b2520;
+}
+
+
+.drzavaIzbor{
+    border-radius: 5px;
+    background-color: #3b252c;
+    color: whitesmoke;
+    border : 2px ridge #3b2520;
+}
+
+.izmeniBtn{
+    background-color: #475841;
+}
+
+.obrisiBtn{
+    background-color: #9a031e;
+}
+
+.select{
+    height:50px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border : 1px solid #3b2520;
+}
+
+button{
+    background-color: #3b252c;
+    color: whitesmoke;
+    border : 2px ridge #3b2520;
+    font-weight: 700;
+    font-size: large;
+    width:200px;
+    height: 50px;
+    margin-top:0.5rem;
+    border-radius: 12px;
+}
+
+.agencijaDiv{
+    margin-bottom:1rem;
+    width:40%;
+    min-width: 360px;
+}
+
+.proveraDiv{
+    margin-bottom:1rem;
+    width : 40%;
+    min-width: 360px;
+}
+
+.rezForma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width : 360px;
+    margin-bottom:1rem;
+    margin: auto;
+}
+
+.border{
+    border : 1px ridge #3b2520;
+    border-radius: 15px;
+}
+
+.rezForma *{
+    margin-bottom: 0.5rem;
+    width: 70%;
+}
+.rezForma button{
+    margin-bottom: 2rem;
+    width : 30%;
+}
+
+.krajForme{
+    border-top: 1px ridge #3b2520;
+    margin: 1em;
+}
+.imeAgencije{
+    text-align:center;
+    margin-top: 0rem;
+    border-bottom: 1px ridge #3b2520;
+}
+
+.podaci{
+    border-bottom: 1px ridge #3b2520;
+}
+
+img{
+    width: 355px;
+    height:200px;
+}
+
+.filter *{
+    margin-bottom: 10px;
+}
+
+.ponude{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:12;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    justify-content:space-evenly;
+}
+
