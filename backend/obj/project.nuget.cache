@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B3nuBBoR+izlPjyV3vJq0JYXP7dCjVIvW6oX2Az9MDx8vytE1aFLMhZpZ9wXgSVQ+up3JflrET7EJItSUV+VHw==",
+  "dgSpecHash": "7SS7qIXioIBr5Xhke/tBvWY6A7JWuU69nlsZE5s/SfttNrrxnEnxNnwhYhkmDHAjZ3qPyWf8W5xX1crHa58XOQ==",
   "success": true,
-  "projectFilePath": "/home/lenazivkovic/Documents/trip_it/backend/trip_it.csproj",
+  "projectFilePath": "/home/lenazivkovic/Documents/webProjekat/backend/trip_it.csproj",
   "expectedPackageFiles": [
     "/home/lenazivkovic/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/lenazivkovic/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -7299,11 +7299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lenazivkovic/Documents/trip_it/backend/trip_it.csproj",
+      "projectUniqueName": "/home/lenazivkovic/Documents/webProjekat/backend/trip_it.csproj",
       "projectName": "trip_it",
-      "projectPath": "/home/lenazivkovic/Documents/trip_it/backend/trip_it.csproj",
+      "projectPath": "/home/lenazivkovic/Documents/webProjekat/backend/trip_it.csproj",
       "packagesPath": "/home/lenazivkovic/.nuget/packages/",
-      "outputPath": "/home/lenazivkovic/Documents/trip_it/backend/obj/",
+      "outputPath": "/home/lenazivkovic/Documents/webProjekat/backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lenazivkovic/.nuget/NuGet/NuGet.Config"
