@@ -10,7 +10,7 @@ Ukoliko izabere agenciju, otvara se forma za izbor putovanja.
 
 ![](./assets/slika2.png)
 
-Korisnik može izabrati državu pa onda grad, opseg datuma koji bi odgovarali njegovoj želji za putovanje, kao i opseg cene koju može očekivati.
+Korisnik može izabrati državu pa onda grad, opseg datuma koji bi odgovarali njegovoj želji za putovanje, kao i opseg cene koju njemu odgovara.
 
 Kada izabere određene podatke, agencija ukoliko ima tu ponudu prikazuje je na ekranu.
 
