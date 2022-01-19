@@ -19,7 +19,6 @@ namespace trip_it.Controllers{
             Context = context;
         }
 
-        //[Route("Prikazi")]
         [HttpGet]
         public ActionResult Prikazi(int ID = -1){
             if(ID == -1)
@@ -35,7 +34,6 @@ namespace trip_it.Controllers{
             }
         }
 
-        //[Route("DodatiLokaciju")]
         [HttpPost]
         public async Task<ActionResult> DodatiLokaciju([FromBody] Lokacija lok){
             
@@ -115,7 +113,6 @@ namespace trip_it.Controllers{
             }
         }
 
-        //[Route("IzbrisiLokaciju/{ID}")]
         [HttpDelete]
         public async Task<ActionResult> IzbrisiLokaciju(int ID){
             if(ID < 0){

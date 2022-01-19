@@ -17,11 +17,14 @@ export class ListaPonuda{
             this.datumMin + "&datumMax="+ this.datumMax +"&minCena="+this.minimumCena+"&maxCena="+this.maximumCena)
         .then(p => p.json())
         .then(p => {
-                p.forEach(el => {
-                    let p = new Ponuda(el.id,el.lokacija,el.cena,el.datum,el.lokacija.slika);
-                    p.draw(container); 
-                })
+            p.forEach(el => {
+                let p = new Ponuda(el.id,el.lokacija,el.cena,el.datum,el.lokacija.slika);
+                p.draw(container); 
+            })
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+            alert("Nemamo tu ponudu trenutno u agenciji!");
+            console.error(err);
+        });
     }
 }

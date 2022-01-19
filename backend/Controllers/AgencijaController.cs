@@ -39,7 +39,7 @@ namespace trip_it.Controllers{
         public async Task<ActionResult> dodajAgenciju(Agencija a){
             Context.agencija.Add(a);
             try{
-            await Context.SaveChangesAsync();
+                await Context.SaveChangesAsync();
                 return Ok("Sve je u redu !");  
             }catch{
                 return BadRequest("Greska pri dodavanju");

@@ -120,11 +120,19 @@ export class Ponuda {
                 noviKlijent.innerText = "Rezerviši!";   
 
                 noviKlijent.onclick = async () =>{
-                    let k = new Klijent(0,ime.value,prezime.value,jmbg.value,grad.value,adresa.value,telefon.value);
-                    k.addToDatabase();
-                    let rez = new Rezervacija(0,k,this,brojDanaN.value,brojOsobaN.value);
-                    rez.addToDatabase(k.jmbg,this.id);
-                    document.body.removeChild(rezForma);
+                    let temp = new Klijent();
+                    temp.getFromDatabase(jmbg.value);
+                    if(temp.id != undefined){
+                        alert("Vec postojite u bazi, popunite deo za postojece klijente!");
+                    }
+                    else{
+                        let k = new Klijent(0,ime.value,prezime.value,jmbg.value,grad.value,adresa.value,telefon.value);
+                        k.addToDatabase();
+                        let rez = new Rezervacija(0,k,this,brojDanaN.value,brojOsobaN.value);
+                        rez.addToDatabase(k.jmbg,this.id);
+                        document.body.removeChild(rezForma);
+                    }
+                    
                 }
 
                 rezForma.appendChild(postojeciLabel);

@@ -14,6 +14,11 @@ body{
     min-height: 100vh;
 }
 
+.pInput{
+    height:50px;
+    width:100%;
+}
+
 .filter{
     padding:1rem;
     display: flex;

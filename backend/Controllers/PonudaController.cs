@@ -62,7 +62,6 @@ namespace trip_it.Controllers{
             
         }
 
-       // [Route("Prikaz")]
         [HttpGet]
         public async Task<ActionResult> Prikaz(int ID = -1){
             if(ID == -1)
@@ -84,7 +83,6 @@ namespace trip_it.Controllers{
             }
         }
 
-        //[Route("DodajPonudu")]
         [HttpPost]
         public async Task<ActionResult> Dodaj(int IDLok,int IDAg,int cena,DateTime datum){
 
@@ -154,7 +152,6 @@ namespace trip_it.Controllers{
             }
         }
 
-        //[Route("ObrisiPonudu")]
         [HttpDelete]
         public async Task<ActionResult> Obrisi(int ID){
             if(ID < 0){
