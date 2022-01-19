@@ -16,7 +16,7 @@ export class Agencija{
         let rezForma = document.createElement("div");
         rezForma.classList.add("rezForma");
     
-        divPonude.setAttribute("class","ponude");
+        divPonude.classList.add("ponude");
     
         let filtriranje = document.createElement("div");
         filtriranje.classList.add("filter");
@@ -41,7 +41,6 @@ export class Agencija{
         filtriranje.appendChild(agencijaIme);
     
         let drzavaLabel = document.createElement("label");
-        drzavaLabel.setAttribute("for","drzava");
         drzavaLabel.innerHTML = "Država:";
         filtriranje.appendChild(drzavaLabel);
     
@@ -64,7 +63,6 @@ export class Agencija{
         filtriranje.appendChild(drzava);
     
         let gradLabel = document.createElement("label");
-        gradLabel.setAttribute("for","grad");
         gradLabel.innerHTML = "Grad:";
         filtriranje.appendChild(gradLabel);
     
@@ -72,15 +70,6 @@ export class Agencija{
         grad.classList.add("gradIzbor");
         filtriranje.appendChild(grad);
         grad.innerHTML = '';
-    
-        fetch("https://localhost:5001/api/Lokacija/Gradovi?drzava="+drzava.value)
-            .then(p => p.json())
-            .then(p => p.forEach(el => {
-                let opcija = document.createElement("option");
-                opcija.innerHTML = el;
-                opcija.value = el;
-                grad.appendChild(opcija);
-            }))
     
         document.body.appendChild(rezForma);
         drzava.onchange = () =>{
@@ -121,12 +110,9 @@ export class Agencija{
     
         let datminLbl = document.createElement("label");
         datminLbl.innerText = "Najraniji polazak:";
-        datminLbl.setAttribute("for","datumMinInput");
-        
     
         let datmaxLbl = document.createElement("label");
         datmaxLbl.innerText = "Najkasniji polazak:";
-        datmaxLbl.setAttribute("for","datumMaxInput");
     
         datumMaxInput.value = today;
         datumMinInput.value = today;
@@ -137,7 +123,6 @@ export class Agencija{
         filtriranje.appendChild(datumMaxInput);
     
         let minLabel = document.createElement("label");
-        minLabel.setAttribute("for","minCena");
         minLabel.innerHTML = "Minimalna cena";
         filtriranje.appendChild(minLabel);
     
@@ -149,7 +134,6 @@ export class Agencija{
         filtriranje.appendChild(minCInput);
         
         let maxLabel = document.createElement("label");
-        maxLabel.setAttribute("for","maxCena");
         maxLabel.innerHTML = "Maksimalna cena";
         filtriranje.appendChild(maxLabel);
     

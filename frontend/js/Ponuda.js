@@ -65,7 +65,6 @@ export class Ponuda {
                 jmbgPostojeci.placeholder = "Unesite Vaš JMBG za novu rezervaciju!";
                 
                 let postojeciLabel = document.createElement("label");
-                postojeciLabel.setAttribute("for","jmbgPostojeci")
                 postojeciLabel.innerHTML = "Postojeći korisnik: ";
 
                 let klijentPostoji = document.createElement("button");
@@ -79,8 +78,7 @@ export class Ponuda {
                     document.body.removeChild(rezForma);
                 }
 
-                let noviLabel = document.createElement("label");
-                noviLabel.setAttribute("for","noviKlijent");
+                let noviLabel = document.createElement("label");    
                 noviLabel.innerHTML = "Novi korisnik: ";
 
                 let noviKlijent = document.createElement("button");

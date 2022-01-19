@@ -45,7 +45,6 @@ export class Rezervacija{
         polje4.innerHTML = "Cena: " + this.ponuda.cena;
 
         let os = document.createElement("label");
-        os.setAttribute("for","numBrOS");
         os.innerText = "Broj osoba:";
         os.classList.add("podaci");
 
@@ -55,7 +54,6 @@ export class Rezervacija{
         numBrOS.value = this.brojOsoba;
 
         let da = document.createElement("label");
-        da.setAttribute("for","numBrDana");
         da.innerText = "Broj dana:";
         da.classList.add("podaci");
 
